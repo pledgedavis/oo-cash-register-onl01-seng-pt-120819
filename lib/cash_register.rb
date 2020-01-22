@@ -1,6 +1,11 @@
 
 class CashRegister
   attr_accessor :total, :discount ,:last_transaction_amount ,:items
+<<<<<<< HEAD
+=======
+  def intialize()
+  
+>>>>>>> 05c8ab95c8c9d7e08a78211854841d4d3b4b1de4
    def initialize(discount = 0)
     @total = 0
     @discount = discount
@@ -19,8 +24,12 @@ class CashRegister
       @items << title
     end
     @total += price*quantity
+<<<<<<< HEAD
     # @last_transaction_amount = @total
     @last_transaction_amount= price*quantity
+=======
+    @last_transaction_amount = @total
+>>>>>>> 05c8ab95c8c9d7e08a78211854841d4d3b4b1de4
     @total
   end
 
@@ -37,7 +46,11 @@ def apply_discount()
 
 
   def void_last_transaction()
+<<<<<<< HEAD
      @total -= @last_transaction_amount
+=======
+    @total -= @last_transaction_amount
+>>>>>>> 05c8ab95c8c9d7e08a78211854841d4d3b4b1de4
   end
 
 end
